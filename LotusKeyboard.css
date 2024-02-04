@@ -1,0 +1,191 @@
+.keyboardWrapper{
+    position:fixed;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index:999;
+    border-top:1px solid #dfd7e3;
+    background:#ebe6ee;
+    -webkit-box-shadow:0 0 10px #e4dde7;
+    box-shadow:0 0 10px #e4dde7;
+    -webkit-transition:all .4s;
+    transition:all .4s
+}
+.keyboardWrapper.hiddenKeyboard{
+    visibility:hidden;
+    bottom:-100% !important;
+    opacity:0
+}
+.keyboardWrapper .container{
+    padding:15px
+}
+.keyboardWrapper .keyboardRow{
+    margin:0 !important
+}
+.keyboardColumn,.keyboardColumn1,.keyboardColumn2,.keyboardColumn3,.keyboardColumn4,.keyboardColumn5,.keyboardColumn6,.keyboardColumn7,.keyboardColumn8,.keyboardColumn9,.keyboardColumn10,.keyboardColumn11,.keyboardColumn12,.keyboardColumn13,.keyboardColumn14,.keyboardColumn15{
+    padding:5px;
+    float:right;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box
+}
+.keyboardColumn1{
+    width:6.66667%
+}
+.keyboardColumn2{
+    width:13.33333%
+}
+.keyboardColumn3{
+    width:20%
+}
+.keyboardColumn4{
+    width:26.66667%
+}
+.keyboardColumn5{
+    width:33.33333%
+}
+.keyboardColumn6{
+    width:40%
+}
+.keyboardColumn7{
+    width:46.66667%
+}
+.keyboardColumn8{
+    width:53.33333%
+}
+.keyboardColumn9{
+    width:60%
+}
+.keyboardColumn10{
+    width:66.66667%
+}
+.keyboardColumn11{
+    width:73.33333%
+}
+.keyboardColumn12{
+    width:80%
+}
+.keyboardColumn13{
+    width:86.66667%
+}
+.keyboardColumn14{
+    width:93.33333%
+}
+.keyboardColumn15{
+    width:100%
+}
+.keyboardButton{
+    width:100%;
+    display:inline-block;
+    padding:15px 5px;
+    border:none;
+    border-bottom:2px solid #dcdcdc;
+    outline:none;
+    position:relative;
+    background:#fff;
+    color:#5a5a5a;
+    font-size:16px;
+    text-align:center;
+    text-decoration:none !important;
+    border-radius:3px;
+    -webkit-transition:all .2s;
+    transition:all .2s
+}
+.keyboardButton:hover{
+    background:#f0f0f0;
+    cursor:pointer
+}
+.keyboardButton i{
+    font-size:20px !important;
+    position:relative
+}
+.keyboardButton.primary{
+    border-bottom-color:#e06500;
+    background:#ff7300;
+    color:#fff
+}
+.keyboardButton.functional{
+    border-bottom-color:#dbdbdb;
+    background:#f2f2f2;
+    color:#5a5a5a
+}
+.keyboardButton.functional.on{
+    border-bottom-color:#ff7300;
+    background:#fff;
+    color:#ff7300;
+    -webkit-box-shadow:inset 0 0 0 1px #ff7300;
+    box-shadow:inset 0 0 0 1px #ff7300
+}
+@media screen and (max-width:992px){
+    [class^=keyboardColumn]{
+        padding:2px
+    }
+    .keyboardButton{
+        padding:10px 2px;
+        font-size:14px
+    }
+}
+@media screen and (max-width:768px){
+    .keyboardColumnMobile1{
+        width:6.66667% !important
+    }
+    .keyboardColumnMobile2{
+        width:13.33333% !important
+    }
+    .keyboardColumnMobile3{
+        width:20% !important
+    }
+    .keyboardColumnMobile4{
+        width:26.66667% !important
+    }
+    .keyboardColumnMobile5{
+        width:33.33333% !important
+    }
+    .keyboardColumnMobile6{
+        width:40% !important
+    }
+    .keyboardColumnMobile7{
+        width:46.66667% !important
+    }
+    .keyboardColumnMobile8{
+        width:53.33333% !important
+    }
+    .keyboardColumnMobile9{
+        width:60% !important
+    }
+    .keyboardColumnMobile10{
+        width:66.66667% !important
+    }
+    .keyboardColumnMobile11{
+        width:73.33333% !important
+    }
+    .keyboardColumnMobile12{
+        width:80% !important
+    }
+    .keyboardColumnMobile13{
+        width:86.66667% !important
+    }
+    .keyboardColumnMobile14{
+        width:93.33333% !important
+    }
+    .keyboardColumnMobile15{
+        width:100% !important
+    }
+    .keyboardWrapper .container{
+        padding:5px
+    }
+    .keyboardWrapper .keyboardRow{
+        display:-webkit-box;
+        display:-webkit-flex;
+        display:-ms-flexbox;
+        display:flex
+    }
+    .keyboardWrapper .keyboardRow [class^=keyboardColumn]{
+        -webkit-box-flex:1;
+        -webkit-flex-grow:1;
+        -ms-flex-positive:1;
+        flex-grow:1
+    }
+    [class^=keyboardColumn]{
+        padding:2px
+    }
+}
